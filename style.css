@@ -174,7 +174,7 @@ body {
 }
 
 .paper-label {
-    font-size: 0.7rem; /* 字體微調小 */
+    font-size: 0.675rem; /* 字體微調小 */
     font-weight: 600;
     color: #64748b;
     margin-right: 0.15rem;
