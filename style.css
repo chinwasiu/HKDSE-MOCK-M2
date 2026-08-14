@@ -121,7 +121,8 @@ body {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /* 稍微加大網格最小寬度，讓手機/窄螢幕更容易整行顯示 */
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 1rem;
 }
 
@@ -139,6 +140,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0.75rem; /* 增加左右間距 */
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     transition: transform 0.15s, box-shadow 0.15s;
 }
@@ -152,20 +154,24 @@ body {
     font-size: 0.95rem;
     font-weight: 600;
     color: #334155;
+    flex: 1; /* 讓標題自動佔用剩餘空間 */
+    word-break: break-word;
 }
 
-/* 垂直排列的按鈕容器 (支援同課題多份試卷) */
+/* 垂直排列的按鈕容器 (修正走字關鍵：防止右側被壓縮) */
 .btn-group-vertical {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     align-items: flex-end;
+    flex-shrink: 0; /* 關鍵：防止按鈕區域被文字擠壓 */
 }
 
 .btn-row {
     display: flex;
     align-items: center;
     gap: 0.4rem;
+    white-space: nowrap; /* 防止按鈕與標籤內部換行 */
 }
 
 .paper-label {
@@ -173,6 +179,7 @@ body {
     font-weight: 600;
     color: #64748b;
     margin-right: 0.2rem;
+    white-space: nowrap; /* 防止 Set 1 斷行成 Set 與 1 */
 }
 
 .btn {
@@ -184,6 +191,7 @@ body {
     text-decoration: none;
     text-align: center;
     transition: background-color 0.2s;
+    white-space: nowrap;
 }
 
 .btn-primary { background-color: #2563eb; color: #ffffff; }
@@ -210,4 +218,15 @@ body {
     padding: 1rem;
     font-size: 0.875rem;
     margin-top: auto;
+}
+
+/* 小螢幕 (手機) 微調：避免標題太長時空間不足 */
+@media (max-width: 480px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .paper-card {
+        padding: 0.85rem;
+    }
 }
