@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKDSE M2 試卷庫</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 頂部導航欄 -->
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">
+                <span class="badge">M2</span>
+                HKDSE M2 資源庫
+            </h1>
+            <nav class="nav-links">
+                <a href="#by-topic">By Topic</a>
+                <a href="#mock-papers">Mock Papers</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主體內容 -->
+    <main class="main-container">
+
+        <!-- 搜尋列 -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="搜尋課題或試卷名稱 (例如: Trigo, dy/dx, Vector, Mock)...">
+        </div>
+
+        <!-- 區塊一：By Topic (9個課題) -->
+        <section id="by-topic" class="section-block">
+            <h2 class="section-title topic-title">按課題分類 (By Topic)</h2>
+
+            <!-- 教我怎樣隱藏：
+                 如果你想把某個 Topic 隱藏，只需在對應的 <div class="paper-card ..."> 加上 hidden 類別即可。
+                 例如：<div class="paper-card hidden" data-search="...">
+                 若想重新顯示，把 hidden 刪除即可。
+            -->
+
+            <div class="card-grid" id="topicGrid">
+
+                <!-- Topic 01: MI -->
+                <div class="paper-card" data-search="mathematical induction 數學歸納法 mi 1">
+                    <h3 class="card-title">1. 數學歸納法 (MI)</h3>
+                    <div class="btn-group-vertical">
+                        <div class="btn-row">
+                            <span class="paper-label">Set 1</span>
+                            <a href="DSE_M2_MOCK_BYTOPIC_1.pdf" target="_blank" class="btn btn-primary">QP</a>
+                            <a href="DSE_M2_MOCK_BYTOPIC_1_MS.pdf" target="_blank" class="btn btn-secondary">MS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 02: B.Thm -->
+                <div class="paper-card" data-search="binomial theorem 二項式定理 b thm 2">
+                    <h3 class="card-title">2. 二項式定理 (Binomial Theorem)</h3>
+                    <div class="btn-group-vertical">
+                        <div class="btn-row">
+                            <span class="paper-label">Set 1</span>
+                            <a href="DSE_M2_MOCK_BYTOPIC_2.pdf" target="_blank" class="btn btn-primary">QP</a>
+                            <a href="DSE_M2_MOCK_BYTOPIC_2_MS.pdf" target="_blank" class="btn btn-secondary">MS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 03: Trigo -->
+                <div class="paper-card" data-search="trigonometry 三角學 trigo 3">
+                    <h3 class="card-title">3. 三角學 (Trigonometry)</h3>
+                    <div class="btn-group-vertical">
+                        <div class="btn-row">
+                            <span class="paper-label">Set 1</span>
+                            <a href="DSE_M2_MOCK_BYTOPIC_3.pdf" target="_blank" class="btn btn-primary">QP</a>
+                            <a href="DSE_M2_MOCK_BYTOPIC_3_MS.pdf" target="_blank" class="btn btn-secondary">MS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 04: Limit -->
+                <div class="paper-card" data-search="limits continuity 極限 limit 4">
+                    <h3 class="card-title">4. 極限 (Limits)</h3>
+                    <div class="btn-group-vertical">
+                        <div class="btn-row">
+                            <span class="paper-label">Set 1</span>
+                            <a href="DSE_M2_MOCK_BYTOPIC_4.pdf" target="_blank" class="btn btn-primary">QP</a>
+                            <a href="DSE_M2_MOCK_BYTOPIC_4_MS.pdf" target="_blank" class="btn btn-secondary">MS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 05: dy/dx -->
+                <div class="paper-card" data-search="differentiation 微分 dy/dx 5">
+                    <h3 class="card-title">5. 微分 (Differentiation)</h3>
+                    <div class="btn-group-vertical">
+                        <div class="btn-row">
+                            <span class="paper-label">Set 1</span>
+                            <a href="DSE_M2_MOCK_BYTOPIC_5.pdf" target="_blank" class="btn btn-primary">QP</a>
+                            <a href="DSE_M2_MOCK_BYTOPIC_5_MS.pdf" target="_blank" class="btn btn-secondary">MS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 06: int -->
+                <div class="paper-card" data-search="integration 積分 int 6">
+                    <h3 class="card-title">6. 積分 (Integration)</h3>
+                    <div class="btn-group-vertical">
+                        <div class="btn-row">
+                            <span class="paper-label">Set 1</span>
+                            <a href="DSE_M2_MOCK_BYTOPIC_6.pdf" target="_blank" class="btn btn-primary">QP</a>
+                            <a href="DSE_M2_MOCK_BYTOPIC_6_MS.pdf" target="_blank" class="btn btn-secondary">MS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 07: Matrix -->
+                <div class="paper-card" data-search="matrices 矩陣 matrix 7">
+                    <h3 class="card-title">7. 矩陣 (Matrices)</h3>
+                    <div class="btn-group-vertical">
+                        <div class="btn-row">
+                            <span class="paper-label">Set 1</span>
+                            <a href="DSE_M2_MOCK_BYTOPIC_7.pdf" target="_blank" class="btn btn-primary">QP</a>
+                            <a href="DSE_M2_MOCK_BYTOPIC_7_MS.pdf" target="_blank" class="btn btn-secondary">MS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 08: Linear System -->
+                <div class="paper-card" data-search="systems of linear equations 線性方程組 linear system 8">
+                    <h3 class="card-title">8. 線性方程組 (Linear Systems)</h3>
+                    <div class="btn-group-vertical">
+                        <div class="btn-row">
+                            <span class="paper-label">Set 1</span>
+                            <a href="DSE_M2_MOCK_BYTOPIC_8.pdf" target="_blank" class="btn btn-primary">QP</a>
+                            <a href="DSE_M2_MOCK_BYTOPIC_8_MS.pdf" target="_blank" class="btn btn-secondary">MS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 09: Vector -->
+                <div class="paper-card" data-search="vectors 向量 vector 9">
+                    <h3 class="card-title">9. 向量 (Vectors)</h3>
+                    <div class="btn-group-vertical">
+                        <div class="btn-row">
+                            <span class="paper-label">Set 1</span>
+                            <a href="DSE_M2_MOCK_BYTOPIC_9.pdf" target="_blank" class="btn btn-primary">QP</a>
+                            <a href="DSE_M2_MOCK_BYTOPIC_9_MS.pdf" target="_blank" class="btn btn-secondary">MS</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 區塊二：Mock Papers -->
+        <section id="mock-papers" class="section-block">
+            <h2 class="section-title mock-title">模擬試卷 (Full Mock Papers)</h2>
+
+            <div class="card-list" id="mockList">
+
+                <!-- Mock 01 -->
+                <div class="paper-card list-row" data-search="full mock paper 01 模擬試卷 1">
+                    <h3 class="card-title">DSE M2 Full Mock Paper 01</h3>
+                    <div class="btn-group-vertical">
+                        <div class="btn-row">
+                            <span class="paper-label">Set 1</span>
+                            <a href="DSE_M2_MOCK_1.pdf" target="_blank" class="btn btn-dark">QP</a>
+                            <a href="DSE_M2_MOCK_1_MS.pdf" target="_blank" class="btn btn-emerald">MS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mock 02 -->
+                <div class="paper-card list-row" data-search="full mock paper 02 模擬試卷 2">
+                    <h3 class="card-title">DSE M2 Full Mock Paper 02</h3>
+                    <div class="btn-group-vertical">
+                        <div class="btn-row">
+                            <span class="paper-label">Set 1</span>
+                            <a href="DSE_M2_MOCK_2.pdf" target="_blank" class="btn btn-dark">QP</a>
+                            <a href="DSE_M2_MOCK_2_MS.pdf" target="_blank" class="btn btn-emerald">MS</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+        <p>©chinwasiu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
